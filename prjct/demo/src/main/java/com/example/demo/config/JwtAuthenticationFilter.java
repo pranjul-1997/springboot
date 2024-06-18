@@ -23,7 +23,7 @@ import jakarta.servlet.http.HttpServletResponse;
 @Component
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
-    private Logger logger = LoggerFactory.getLogger(OncePerRequestFilter.class);
+    private Logger logger = (Logger) LoggerFactory.getLogger(OncePerRequestFilter.class);
     @Autowired
     private JwtHelper jwtHelper;
 
